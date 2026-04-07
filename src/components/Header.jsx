@@ -1,10 +1,17 @@
 import React from 'react'
 import './Header.css'
+import profileImage from '../assets/images/profile.jpg'
 
 function Header() {
     return (
         <header className="header">
             <div className="header-content">
+                {/* Image is added here */}
+                <img
+                    src={profileImage}
+                    alt="Profile pic"
+                    className="profile-image"
+                />
                 <h1 className="header-title">Chimuanya Mirabel Obioma-Onyenma</h1>
                 <p className="header-subtitle">Software Engineer</p>
                 <p className="header-tagline">I build scalable web applications</p>

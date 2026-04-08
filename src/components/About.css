@@ -1,0 +1,281 @@
+.about {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    gap: 3rem;
+}
+
+/*Bio Section*/
+.about-bio {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.bio-header h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.bio-title {
+    font-size: 1.2rem;
+    color: #667eea;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.bio-location {
+    color: #7f8c8d;
+    margin-bottom: 1rem;
+}
+
+.bio-text {
+    line-height: 1.8;
+    color: #34495e;
+    margin: 1.5rem 0;
+}
+
+.long-bio {
+    margin-top: 1rem;
+    animation: slidedown 0.3s ease;
+}
+
+.read-more-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.read-more-btn:active {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+/*Contact Info*/
+.contact-info {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+}
+
+.contact-item a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/*Skills Section*/
+.skills-section, .interests-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h3, .interests-section h3 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+}
+
+.skill-name {
+    font-weight: 500;
+}
+
+.skill-percent {
+    color: #667eea;
+    font-weight: 500;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 8px;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: width 1s ease-in-out;
+}
+
+.skill-tooltip {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background: #2c3e50;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    animation: fadein 0.3s ease;
+}
+
+/*Interests Section*/
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.interest-chip {
+    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+    color: #667eea;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid #667eea30;
+}
+
+.interest-chip:hover {
+    transform: translate(-2px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/*Animations*/
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Responsive Design- Mobile First*/
+@media (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 2rem 1rem;
+    }
+
+    .about-bio, .skills-section, .interests-section {
+        padding: 1.5rem;
+    }
+
+    .bio-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .bio-title {
+        font-size: 1rem;
+    }
+
+    .interests-list {
+        gap: 0.5rem;
+    }
+
+    .interest-chip {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .read-more-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .skill-tooltip {
+        display: none;
+    }
+}

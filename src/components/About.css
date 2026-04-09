@@ -1,6 +1,6 @@
 .about {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
 }
 
 .about-container {
@@ -11,7 +11,7 @@
 .section-title {
     text-align: center;
     font-size: 2.5rem;
-    color: #2c3e50;
+    color: var(--text-primary);
     margin-bottom: 3rem;
     position: relative;
     display: inline-block;
@@ -26,7 +26,7 @@
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--button-bg);
 }
 
 .about-content {
@@ -35,35 +35,35 @@
     gap: 3rem;
 }
 
-/*Bio Section*/
+/*Bio Section*/ 
 .about-bio {
-    background: white;
+    background: var(--card-bg);
     border-radius: 15px;
     padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--card-shadow);
 }
 
 .bio-header h3 {
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
 }
 
 .bio-title {
     font-size: 1.2rem;
-    color: #667eea;
+    color: var(--link-color);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .bio-location {
-    color: #7f8c8d;
+    color: var(--text-light);
     margin-bottom: 1rem;
 }
 
 .bio-text {
     line-height: 1.8;
-    color: #34495e;
+    color: var(--text-secondary);
     margin: 1.5rem 0;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .read-more-btn {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--button-bg);
     color: white;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -86,18 +86,19 @@
 
 .read-more-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 15px var(--button-hover);
 }
 
 .read-more-btn:active {
-    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    background: var(--button-bg);
+    opacity: 0.9;
 }
 
 /*Contact Info*/
 .contact-info {
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid var(--border-color);
 }
 
 .contact-item {
@@ -111,27 +112,27 @@
 }
 
 .contact-item a {
-    color: #667eea;
+    color: var(--link-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-item a:hover {
-    color: #764ba2;
+    color: var(--link-hover);
     text-decoration: underline;
 }
 
 /*Skills Section*/
 .skills-section, .interests-section {
-    background: white;
+    background: var(--card-bg);
     border-radius: 15px;
     padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--card-shadow);
 }
 
 .skills-section h3, .interests-section h3 {
-    color: #2c3e50;
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
 }
@@ -144,7 +145,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0.5rem;
-    color: #34495e;
+    color: var(--text-secondary);
 }
 
 .skill-name {
@@ -152,12 +153,12 @@
 }
 
 .skill-percent {
-    color: #667eea;
+    color: var(--link-color);
     font-weight: 500;
 }
 
 .progress-bar {
-    background: #e0e0e0;
+    background: var(--progress-bg);
     border-radius: 10px;
     overflow: hidden;
     height: 8px;
@@ -175,8 +176,8 @@
     position: absolute;
     top: -30px;
     right: 0;
-    background: #2c3e50;
-    color: white;
+    background: var(--text-primary);
+    color: var(--bg-primary);
     padding: 0.25rem 0.5rem;
     border-radius: 5px;
     font-size: 0.75rem;
@@ -192,21 +193,20 @@
 }
 
 .interest-chip {
-    background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-    color: #667eea;
+    background: var(--link-color);
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 1px solid #667eea30;
+    border: 1px solid transparent;
 }
 
 .interest-chip:hover {
     transform: translate(-2px);
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    background: var(--link-hover);
+    box-shadow: 0 5px 15px var(--button-hover);
 }
 
 /*Animations*/

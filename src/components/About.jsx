@@ -96,7 +96,7 @@ function About() {
                         </div>
 
                         <div className="contact-info">
-                            <div className="contact-item">  {/* Fixed: changed from contact-items to contact-item */}
+                            <div className="contact-item">  
                                 <span className="contact-icon">📧</span>
                                 <a href={`mailto:${bio.email}`}>{bio.email}</a>
                             </div>
@@ -147,7 +147,7 @@ function About() {
                         </div>
 
                         {/* Interests section */}
-                        <div className="interests-section">  {/* Fixed: changed from interest-section to interests-section */}
+                        <div className="interests-section">  
                             <h3>🎯 Interests & Hobbies</h3>
                             <div className="interests-list">
                                 {bio.interests.map((interest, index) => (

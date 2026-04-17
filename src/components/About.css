@@ -117,6 +117,7 @@
     transition: color 0.3s ease;
 }
 
+
 .contact-item a:hover {
     color: var(--link-hover);
     text-decoration: underline;
@@ -209,6 +210,35 @@
     box-shadow: 0 5px 15px var(--button-hover);
 }
 
+
+
+/* Skill name with icon container */
+.skill-name-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* Icon styling */
+.skill-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for icons */
+.skill-item:hover .skill-icon {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.contact-icon {
+    font-size: 1.2rem;
+}
+
+
+
+
 /*Animations*/
 @keyframes slideDown {
     from {
@@ -277,5 +307,16 @@
 
     .skill-tooltip {
         display: none;
+    }
+}
+
+/* Responsive adjustments for icons */
+@media (max-width: 768px) {
+    .skill-icon {
+        font-size: 1rem;
+    }
+    
+    .skill-name-with-icon {
+        gap: 0.5rem;
     }
 }

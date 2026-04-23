@@ -40,13 +40,13 @@ function About() {
         longBio: "I graduated from Nile University of Nigeria and began my coding journey in 2025 and quickly fell in love with web development. Since then, I've been a smooth and steady curve to learn and grow as i build numerous projects, collaborate with other developers, and continuously expand my skills. When I'm not coding, you can find me reading tech blogs, video editing, or enjoying a good cup of coffee while planning my next project.",
         skills: [
             { name: "HTML/CSS", level: 90, color: "#E34F26" },
-            { name: "JavaScript", level: 60, color: "#F0DB4F" },
+            { name: "JavaScript", level: 81, color: "#F0DB4F" },
             { name: "React", level: 70, color: "#61DAFB" }, // Changed to React blue
             { name: "Git/GitHub", level: 80, color: "#F34F29" },
             { name: "Responsive Design", level: 85, color: "#3498DB" },
-            { name: "Python", level: 75, color: "#306998" },
-            { name: "SQL", level: 60, color: "#00758F" },
-            { name: "TypeScript", level: 50, color: "#007ACC" },
+            { name: "Python", level: 79, color: "#306998" },
+            { name: "SQL", level: 73, color: "#00758F" },
+            { name: "TypeScript", level: 78, color: "#007ACC" },
             { name: "PHP", level: 70, color: "#8E44AD" },
             { name: "UI/UX Design", level: 80, color: "#E67E22" },
         ],
@@ -96,7 +96,7 @@ function About() {
                         </div>
 
                         <div className="contact-info">
-                            <div className="contact-item">  {/* Fixed: changed from contact-items to contact-item */}
+                            <div className="contact-item">  
                                 <span className="contact-icon">📧</span>
                                 <a href={`mailto:${bio.email}`}>{bio.email}</a>
                             </div>
@@ -147,7 +147,7 @@ function About() {
                         </div>
 
                         {/* Interests section */}
-                        <div className="interests-section">  {/* Fixed: changed from interest-section to interests-section */}
+                        <div className="interests-section">  
                             <h3>🎯 Interests & Hobbies</h3>
                             <div className="interests-list">
                                 {bio.interests.map((interest, index) => (

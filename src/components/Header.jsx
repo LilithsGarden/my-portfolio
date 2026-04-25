@@ -1,6 +1,7 @@
 import React from 'react'
 import './Header.css'
 import FramedPicture from './FramedPicture'
+import profileImage from '../assets/images/profile.jpg'
 
 function Header() {
     return (
@@ -8,7 +9,7 @@ function Header() {
             <div className="header-content">
                 {/* Replace Regular image with FramedPicture */}
                 <FramedPicture
-                    imageSrc="/profile.jpg"
+                    imageSrc={new URL(profileImage, import.meta.url).href}
                     altText="This should be my profile picture"
                     name="Chimuanya Mirabel"
                 />
